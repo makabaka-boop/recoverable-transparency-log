@@ -1,0 +1,15 @@
+[build-system]
+requires = []
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aolog"
+version = "0.1.0"
+description = "Durable, append-only, independently auditable JSON log"
+requires-python = ">=3.11"
+
+[project.scripts]
+aolog = "aolog.client:main"
+
+[tool.setuptools]
+packages = ["aolog"]
